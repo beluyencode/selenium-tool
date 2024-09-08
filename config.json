@@ -1,0 +1,28 @@
+{
+    "econtract": {
+        "url": "https://review-2025.mate.com.vn/",
+        "admin": {
+            "username": "admin@mate.com.vn",
+            "password": "admin"
+        },
+        "company": {
+            "name": "Mẹ thằng chó Hoàn"
+        },
+        "adminCompany": {
+            "name": "Hoàn tệ bạc",
+            "email": "methangchohoan@gmail.com",
+            "password": "1"
+        },
+        "plan": {
+            "name": "Gói cái qq nhé",
+            "contractLimit": 1000,
+            "expiredDate": 1000,
+            "storageLimit": 1000,
+            "CA": true
+        },
+        "addPlan": {
+            "name": "Gói cái qq nhé",
+            "companyName": "Mẹ thằng chó Hoàn"
+        }
+    }
+}
