@@ -1,28 +1,45 @@
 {
     "econtract": {
-        "url": "https://review-2025.mate.com.vn/",
+        "url": "https://review-2118.mate.com.vn/",
         "admin": {
             "username": "admin@mate.com.vn",
             "password": "admin"
         },
         "company": {
-            "name": "Mẹ thằng chó Hoàn"
+            "name": "MATE JSC"  
         },
         "adminCompany": {
-            "name": "Hoàn tệ bạc",
-            "email": "methangchohoan@gmail.com",
+            "name": "Hoàn",
+            "email": "hoanhh@mate.com.vn",
             "password": "1"
         },
+        "listUser": [
+            {
+                "name": "long be",
+                "email":"longpv@mate.com.vn",
+                "password": "1"
+            },
+            {
+                "name": "long lon",
+                "email":"longnv@mate.com.vn",
+                "password": "1"
+            },
+            {
+                "name": "long binh thuong",
+                "email":"longbt@mate.com.vn",
+                "password": "1"
+            }
+        ],
         "plan": {
-            "name": "Gói cái qq nhé",
+            "name": "Premium",
             "contractLimit": 1000,
             "expiredDate": 1000,
             "storageLimit": 1000,
             "CA": true
         },
         "addPlan": {
-            "name": "Gói cái qq nhé",
-            "companyName": "Mẹ thằng chó Hoàn"
+            "name": "Premium",
+            "companyName": "MATE JSC"
         }
     }
 }
