@@ -1,3 +1,5 @@
+const config = require("./config");
+
 module.exports = class Logger {
     constructor(label) {
         this.label = label;
@@ -7,8 +9,12 @@ module.exports = class Logger {
         console.time(this.label);
     }
 
-    stop() {
+    async stop() {
         console.timeEnd(this.label);
+        if (config.delay) {
+            console.log("Waiting for", config.delay, "ms");
+            await new Promise(resolve => setTimeout(resolve, config.delay));
+        }
     }
 
     

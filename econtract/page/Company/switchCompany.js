@@ -32,7 +32,7 @@ module.exports = async function addCompany(driver) {
             10000
         );
 
-        logger.stop();
+        await logger.stop();
     } finally {
 
     }

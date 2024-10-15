@@ -76,7 +76,7 @@ module.exports = async function addPlan(driver) {
 
         await driver.wait(until.titleIs('Xmate Econtract - ' + config.econtract.plan.name), 10000);
 
-        logger.stop();
+        await logger.stop();
     } finally {
         
     }

@@ -100,7 +100,7 @@ module.exports = async function addAdminUser(driver) {
 
         await driver.wait(until.stalenessOf(confirmPasswordButton), 10000);
         
-        logger.stop();
+        await logger.stop();
     } finally {
         
     }

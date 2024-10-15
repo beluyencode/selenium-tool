@@ -1,9 +1,9 @@
 {
     "econtract": {
-        "url": "https://review-2118.mate.com.vn/",
+        "url": "http://localhost:8069/",
         "admin": {
-            "username": "admin@mate.com.vn",
-            "password": "admin"
+            "email": "admin",
+            "password": "1"
         },
         "company": {
             "name": "MATE JSC"
@@ -79,5 +79,6 @@
             "name": "Premium",
             "companyName": "MATE JSC"
         }
-    }
+    },
+    "delay": 0
 }

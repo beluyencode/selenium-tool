@@ -53,7 +53,7 @@ module.exports = async function addCompany(driver) {
 
         await driver.wait(until.titleIs('Xmate Econtract - ' + config.econtract.company.name), 10000);
 
-        logger.stop();
+        await logger.stop();
     } finally {
         
     }

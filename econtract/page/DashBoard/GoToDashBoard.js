@@ -2,7 +2,7 @@ const config = require('../../../config.json');
 const {By, until} = require('selenium-webdriver');
 const Logger = require('../../../helper/logger');
 
-module.exports = async function GoToDashBoard(driver) {
+module.exports = async function goToDashBoard(driver) {
     try {
         const logger = new Logger('Go to Dash Board');
         logger.start();

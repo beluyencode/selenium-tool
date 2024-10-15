@@ -127,7 +127,7 @@ module.exports = async function addPlanToCompany(driver) {
 
         await driver.wait(until.titleIs('Xmate Econtract - ' + subscriptionName), 10000);
 
-        logger.stop();
+        await logger.stop();
     } finally {
         
     }

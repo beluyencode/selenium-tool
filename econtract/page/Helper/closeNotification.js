@@ -15,7 +15,7 @@ module.exports = async function closeNotification(driver) {
 
         await closeNotification.click();
         
-        logger.stop();
+        await logger.stop();
     } finally {
         
     }

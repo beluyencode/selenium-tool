@@ -2,7 +2,7 @@ const config = require('../../../../config.json');
 const { By, until } = require('selenium-webdriver');
 const Logger = require('../../../../helper/logger');
 
-module.exports = async function UpLoadFile(driver) {
+module.exports = async function upLoadFile(driver) {
     try {
         const logger = new Logger('Up Load File ' + config.econtract.files.filePDFBlank);
         logger.start();
@@ -20,7 +20,7 @@ module.exports = async function UpLoadFile(driver) {
 
 
 
-        logger.stop();
+        await logger.stop();
     } finally {
 
     }

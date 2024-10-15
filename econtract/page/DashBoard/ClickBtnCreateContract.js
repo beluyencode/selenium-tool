@@ -2,7 +2,7 @@ const config = require('../../../config.json');
 const {By, until} = require('selenium-webdriver');
 const Logger = require('../../../helper/logger');
 
-module.exports = async function ClickBtnCreateContract(driver) {
+module.exports = async function clickBtnCreateContract(driver) {
     try {
         const logger = new Logger('Click Button Create Contract');
         logger.start();
@@ -16,7 +16,7 @@ module.exports = async function ClickBtnCreateContract(driver) {
         // Chờ load trang tạo hợp đồng
         await driver.wait(until.titleIs('Xmate Econtract - ' + 'Create documentation'), 10000);
 
-        logger.stop();
+        await logger.stop();
     } finally {
         
     }

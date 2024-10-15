@@ -2,7 +2,7 @@ const config = require('../../../../config.json');
 const { By, until } = require('selenium-webdriver');
 const Logger = require('../../../../helper/logger');
 
-module.exports = async function SelectContractType(driver) {
+module.exports = async function selectContractType(driver) {
     try {
         const logger = new Logger('Select Contract Type');
         logger.start();
@@ -10,7 +10,7 @@ module.exports = async function SelectContractType(driver) {
         // Chọn loại hợp đồng
         let selectContractType = await driver.selectContractType(By.css('#contract-type-input'));
 
-        logger.stop();
+        await logger.stop();
     } finally {
 
     }

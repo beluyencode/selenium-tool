@@ -1,7 +1,7 @@
 const config = require('../../../helper/config');
 const { By, until } = require('selenium-webdriver');
 const Logger = require('../../../helper/logger');
-const closeNotification = require('../Helper/closeNotification');
+const closeNotification = require('../helper/closeNotification');
 
 
 module.exports = async function addUser(driver, user) {
@@ -103,7 +103,7 @@ module.exports = async function addUser(driver, user) {
 
         await driver.wait(until.stalenessOf(confirmPasswordButton), 10000);
 
-        logger.stop();
+        await logger.stop();
     } finally {
 
     }
