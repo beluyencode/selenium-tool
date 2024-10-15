@@ -1,6 +1,6 @@
-const config = require('../../helper/config');
+const config = require('../../../helper/config');
 const {By, until} = require('selenium-webdriver');
-const Logger = require('../../helper/logger');
+const Logger = require('../../../helper/logger');
 
 module.exports = async function addAdminUser(driver) {
     try {

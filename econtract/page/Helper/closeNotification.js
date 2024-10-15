@@ -1,5 +1,5 @@
 const {By, until} = require('selenium-webdriver');
-const Logger = require('../../helper/logger');
+const Logger = require('../../../helper/logger');
 
 
 

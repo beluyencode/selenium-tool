@@ -6,7 +6,7 @@
             "password": "admin"
         },
         "company": {
-            "name": "MATE JSC"  
+            "name": "MATE JSC"
         },
         "adminCompany": {
             "name": "Hoàn",
@@ -15,21 +15,59 @@
         },
         "listUser": [
             {
-                "name": "long be",
-                "email":"longpv@mate.com.vn",
-                "password": "1"
+                "name": "Rigden",
+                "email": "mrigden0@imgur.com",
+                "password": 1
             },
             {
-                "name": "long lon",
-                "email":"longnv@mate.com.vn",
-                "password": "1"
+                "name": "Naldrett",
+                "email": "pnaldrett1@skyrock.com",
+                "password": 1
             },
             {
-                "name": "long binh thuong",
-                "email":"longbt@mate.com.vn",
-                "password": "1"
+                "name": "Murkus",
+                "email": "fmurkus2@netscape.com",
+                "password": 1
+            },
+            {
+                "name": "Maund",
+                "email": "dmaund3@cornell.edu",
+                "password": 1
+            },
+            {
+                "name": "Meyrick",
+                "email": "emeyrick4@chronoengine.com",
+                "password": 1
+            },
+            {
+                "name": "Karle",
+                "email": "rkarle5@japanpost.jp",
+                "password": 1
+            },
+            {
+                "name": "Tolcharde",
+                "email": "stolcharde6@thetimes.co.uk",
+                "password": 1
+            },
+            {
+                "name": "Benardette",
+                "email": "lbenardette7@ning.com",
+                "password": 1
+            },
+            {
+                "name": "Villiers",
+                "email": "cvilliers8@goo.ne.jp",
+                "password": 1
+            },
+            {
+                "name": "Rickell",
+                "email": "lrickell9@about.com",
+                "password": 1
             }
         ],
+        "files": {
+            "filePDFBlank": "D:/Automation/selenium-tool/assets/files/blank_3_pages.pdf"
+        },
         "plan": {
             "name": "Premium",
             "contractLimit": 1000,

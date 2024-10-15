@@ -1,6 +1,6 @@
-const config = require('../../helper/config');
-const {By, until} = require('selenium-webdriver');
-const Logger = require('../../helper/logger');
+const config = require('../../../helper/config');
+const { By, until } = require('selenium-webdriver');
+const Logger = require('../../../helper/logger');
 
 module.exports = async function addCompany(driver) {
     try {
@@ -34,6 +34,6 @@ module.exports = async function addCompany(driver) {
 
         logger.stop();
     } finally {
-        
+
     }
 }

@@ -1,8 +1,8 @@
-const config = require('../../helper/config');
+const config = require('../../../helper/config');
 const {By, until} = require('selenium-webdriver');
-const Logger = require('../../helper/logger');
+const Logger = require('../../../helper/logger');
 
-module.exports = async function login(driver) {
+module.exports = async function loginAdminUser(driver) {
     try {
         const logger = new Logger('login econtract');
         logger.start();
