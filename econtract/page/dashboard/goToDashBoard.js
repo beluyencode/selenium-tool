@@ -16,8 +16,6 @@ module.exports = async function goToDashBoard(driver) {
         // Chờ load trang tổng quan hoàn tất
         await driver.wait(until.titleIs('Xmate Econtract - ' + 'Dashboard'), 10000);
 
-        
-
         logger.stop();
     } finally {
         
