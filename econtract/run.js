@@ -1,8 +1,10 @@
+const createContract = require('./testCase/createContract');
 const initTestData = require('./testCase/initTestData');
 
 module.exports = async function run() {
     Promise.allSettled([
         initTestData(),
+        createContract()
     ]).then((results) => {
         results.forEach((result, index) => {
             if (result.status === 'fulfilled') {
