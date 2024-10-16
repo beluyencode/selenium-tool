@@ -16,8 +16,7 @@ module.exports = async function initTestData() {
         await addAdminUser(driver);
         await addPlan(driver);
         await addPlanToCompany(driver);
-        for (const element of config.econtract.listUser) {
-            const user = element;
+        for (const user of config.econtract.listUser) {
             await addUser(driver, user)
         }
     });

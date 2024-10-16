@@ -1,5 +1,5 @@
 const config = require('../../../helper/config');
-const {By, until} = require('selenium-webdriver');
+const { By, until } = require('selenium-webdriver');
 const Logger = require('../../../helper/logger');
 
 module.exports = async function addCompany(driver) {
@@ -9,7 +9,7 @@ module.exports = async function addCompany(driver) {
 
         // Tìm button settings
         let settings = await driver.findElement(By.xpath("//header//*[@title='More Menu']//span[text()='Settings']"));
-        
+
         // Click vào button settings
         await settings.click();
 
@@ -17,7 +17,7 @@ module.exports = async function addCompany(driver) {
         let companiesButton = await driver.wait(until.elementLocated(
             By.xpath("//a[text()='Companies']")),
             10000
-        ); 
+        );
 
         // Click vào button Companies
         await companiesButton.click();
@@ -26,15 +26,14 @@ module.exports = async function addCompany(driver) {
         await driver.wait(until.titleIs('Xmate Econtract - Companies'), 10000);
 
         // Tìm button Create
-        let buttonElement =  await driver.wait(until.elementLocated(
+        let buttonElement = await driver.wait(until.elementLocated(
             By.xpath("//div[@class='o_cp_buttons']//button[text()=' New ']")),
             10000
         );
-       
+
         // Click vào button Create
         await buttonElement.click();
 
-        
         // Chờ đến khi load trang xong
         await driver.wait(until.titleIs('Xmate Econtract - New'), 10000);
 
@@ -55,6 +54,6 @@ module.exports = async function addCompany(driver) {
 
         await logger.stop();
     } finally {
-        
+
     }
 }

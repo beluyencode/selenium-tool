@@ -9,6 +9,8 @@ module.exports = async function addUser(driver, user) {
         const logger = new Logger('Add user ' + user.name);
         logger.start();
 
+        await closeNotification(driver)
+
         // Tìm button settings
         let settings = await driver.findElement(By.xpath("//header//*[@title='More Menu']//span[text()='Settings']"));
 
@@ -63,7 +65,10 @@ module.exports = async function addUser(driver, user) {
         await closeNotification(driver)
 
         // Tìm button action
-        let actionButton = await driver.findElement(By.css("div.o_cp_action_menus"));
+        let actionButton = await driver.wait(until.elementLocated(
+            By.css("div.o_cp_action_menus")),
+            10000
+        );
 
         // Click vào button action
         await actionButton.click();

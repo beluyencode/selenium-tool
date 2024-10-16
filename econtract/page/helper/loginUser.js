@@ -1,5 +1,5 @@
 const config = require('../../../helper/config');
-const {By, until} = require('selenium-webdriver');
+const { By, until } = require('selenium-webdriver');
 const Logger = require('../../../helper/logger');
 
 module.exports = async function loginUser(driver, user) {
@@ -17,12 +17,12 @@ module.exports = async function loginUser(driver, user) {
 
         // Gửi biểu mẫu đăng nhập
         await driver.findElement(By.css('button[type="submit"]')).click();
-        
+
         // Kiểm tra URL hiện tại của trang
         await driver.wait(until.urlContains(config.econtract.url + 'web#action='), 10000);
 
         await logger.stop();
     } finally {
-        
+
     }
 }

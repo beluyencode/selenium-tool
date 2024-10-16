@@ -1,4 +1,4 @@
-const {By, until} = require('selenium-webdriver');
+const { By, until } = require('selenium-webdriver');
 const Logger = require('../../../helper/logger');
 
 
@@ -14,9 +14,11 @@ module.exports = async function closeNotification(driver) {
         );
 
         await closeNotification.click();
-        
+
         await logger.stop();
+    } catch {
+        return false;
     } finally {
-        
+
     }
 }
