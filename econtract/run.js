@@ -4,7 +4,7 @@ const initTestData = require('./testCase/initTestData');
 const initTestDataCompany = require('./testCase/initTestDataCompany');
 
 module.exports = async function run() {
-    await initTestDataCompany();
+    await initTestData();
     // Promise.allSettled([
     //     initAllTestDataFlow()
     // ]).then((results) => {
