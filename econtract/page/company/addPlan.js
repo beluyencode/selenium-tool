@@ -15,26 +15,26 @@ module.exports = async function addPlan(driver) {
         // Tìm button Plan
         let planButton = await driver.wait(until.elementLocated(
             By.xpath("//a[text()='Plan']")),
-            10000
+            config.timeout || 10000
         ); 
 
         // Click vào button Companies
         await planButton.click();
 
         // Chờ đến khi load trang xong
-        await driver.wait(until.titleIs('Xmate Econtract - Subscriptions Plan'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - Subscriptions Plan'), config.timeout || 10000);
 
         // Tìm button Create
         let buttonElement =  await driver.wait(until.elementLocated(
             By.xpath("//div[@class='o_cp_buttons']//button[text()=' New ']")),
-            10000
+            config.timeout || 10000
         );
        
         // Click vào button Create
         await buttonElement.click();
 
         // Chờ đến khi load trang xong
-        await driver.wait(until.titleIs('Xmate Econtract - New'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - New'), config.timeout || 10000);
 
         // Tìm phần tử input có placeholder là 'e.g. Standard'
         let inputElement = await driver.findElement(By.css("input[placeholder='e.g. Standard']"));
@@ -74,7 +74,7 @@ module.exports = async function addPlan(driver) {
         await saveButton.click();
 
 
-        await driver.wait(until.titleIs('Xmate Econtract - ' + config.econtract.plan.name), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - ' + config.econtract.plan.name), config.timeout || 10000);
 
         await logger.stop();
     } finally {

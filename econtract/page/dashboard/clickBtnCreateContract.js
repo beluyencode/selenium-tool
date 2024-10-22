@@ -14,7 +14,7 @@ module.exports = async function clickBtnCreateContract(driver) {
         await createContractBtn.click();
 
         // Chờ load trang tạo hợp đồng
-        await driver.wait(until.titleIs('Xmate Econtract - ' + 'Create documentation'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - ' + 'Create documentation'), config.timeout || 10000);
 
         await logger.stop();
     } finally {

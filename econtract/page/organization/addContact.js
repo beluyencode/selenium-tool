@@ -16,7 +16,7 @@ module.exports = async function addOrganization(driver, contact, organizationNam
         // Tìm nút contact
         let btnContact = await driver.wait(until.elementLocated(
             By.css("a[data-menu-xmlid='mate_sign.menu_mate_sign_contact']")),
-            10000
+            config.timeout || 10000
         );
 
         // Click nút contact
@@ -25,14 +25,14 @@ module.exports = async function addOrganization(driver, contact, organizationNam
         // Tìm nút new contact
         let buttonNew = await driver.wait(until.elementLocated(
             By.xpath("//div[@class='o_cp_buttons']//button[text()=' New ']")),
-            10000
+            config.timeout || 10000
         );
 
         // Click nút new
         await buttonNew.click();
 
         // Chờ đến khi load trang xong
-        await driver.wait(until.titleIs('Xmate Econtract - New'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - New'), config.timeout || 10000);
 
         // Tìm phần tử input tên contact
         let inputName = await driver.findElement(By.css("input[id='name']"));
@@ -55,7 +55,7 @@ module.exports = async function addOrganization(driver, contact, organizationNam
         // Tìm item organization
         let organizationItem = await driver.wait(until.elementLocated(
             By.xpath(`//div[@name='organization_id']//a[text()='${organizationName}']`)),
-            10000
+            config.timeout || 10000
         );
 
         // Click item
@@ -67,7 +67,7 @@ module.exports = async function addOrganization(driver, contact, organizationNam
         // Click vào button Save
         await saveButton.click();
 
-        await driver.wait(until.titleIs('Xmate Econtract - ' + contact.name), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - ' + contact.name), config.timeout || 10000);
 
         logger.stop();
     } finally {

@@ -1,16 +1,16 @@
 {
     "econtract": {
-        "url": "https://review-2130.mate.com.vn/",
+        "url": "http://localhost:8069/",
         "admin": {
-            "email": "admin@mate.com.vn",
-            "password": "admin"
+            "email": "admin",
+            "password": "1"
         },
         "company": {
-            "name": "MATE JSC"
+            "name": "MATE JSC 1"
         },
         "adminCompany": {
             "name": "Hoàn",
-            "email": "hoanhh@mate.com.vn",
+            "email": "hoanhh1@mate.com.vn",
             "password": "1"
         },
         "listUser": [
@@ -532,5 +532,9 @@
             "companyName": "MATE JSC"
         }
     },
+    "testCases": [
+        "initTestData"
+    ],
+    "timeout": 10000,
     "delay": 0
 }

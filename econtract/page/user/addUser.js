@@ -27,7 +27,7 @@ module.exports = async function addUser(driver, user) {
         await usersButton.click();
 
         // Chờ đến khi load trang xong
-        await driver.wait(until.titleIs('Xmate Econtract - Users'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - Users'), config.timeout || 10000);
 
         // Tìm button Create
         let buttonElement = await driver.wait(until.elementLocated(
@@ -39,7 +39,7 @@ module.exports = async function addUser(driver, user) {
         await buttonElement.click();
 
         // Chờ đến khi load trang xong
-        await driver.wait(until.titleIs('Xmate Econtract - New'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - New'), config.timeout || 10000);
 
         // Tìm phần tử input có placeholder là 'e.g. John Doe'
         let nameInput = await driver.findElement(By.css("input[placeholder='e.g. John Doe']"));
@@ -59,7 +59,7 @@ module.exports = async function addUser(driver, user) {
         // Click vào button Save
         await saveButton.click();
 
-        await driver.wait(until.titleIs('Xmate Econtract - ' + user.name), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - ' + user.name), config.timeout || 10000);
 
         // Xóa notification lưu thành công
         await closeNotification(driver)
@@ -67,7 +67,7 @@ module.exports = async function addUser(driver, user) {
         // Tìm button action
         let actionButton = await driver.wait(until.elementLocated(
             By.css("div.o_cp_action_menus")),
-            10000
+            config.timeout || 10000
         );
 
         // Click vào button action
@@ -76,7 +76,7 @@ module.exports = async function addUser(driver, user) {
         // Tìm button change password
         let changePasswordButton = await driver.wait(until.elementLocated(
             By.xpath("//span[@class='dropdown-item o_menu_item'][text()='Change Password']")),
-            10000
+            config.timeout || 10000
         );
 
         // Click vào button change password
@@ -85,7 +85,7 @@ module.exports = async function addUser(driver, user) {
         // Tìm td change password
         let tdPasswordInput = await driver.wait(until.elementLocated(
             By.css("td[name='new_passwd']")),
-            10000
+            config.timeout || 10000
         );
 
         // click vào input change password
@@ -94,7 +94,7 @@ module.exports = async function addUser(driver, user) {
         // Tìm input change password
         let passwordInput = await driver.wait(until.elementLocated(
             By.css("input[autocomplete='new-password']")),
-            10000
+            config.timeout || 10000
         );
 
         // Thực hiện hành động với phần tử tìm thấy, ví dụ như nhập dữ liệu
@@ -106,7 +106,7 @@ module.exports = async function addUser(driver, user) {
         // Click vào button confirm password
         await confirmPasswordButton.click();
 
-        await driver.wait(until.stalenessOf(confirmPasswordButton), 10000);
+        await driver.wait(until.stalenessOf(confirmPasswordButton), config.timeout || 10000);
 
         await logger.stop();
     } finally {

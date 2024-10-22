@@ -15,7 +15,7 @@ module.exports = async function upLoadFile(driver) {
 
         await driver.wait(until.elementLocated(
             By.css("#file-infor-loaded")),
-            10000
+            config.timeout || 10000
         );
 
 

@@ -17,7 +17,7 @@ module.exports = async function addOrganization(driver, organization) {
         // Tìm nút organization
         let btnOrganization = await driver.wait(until.elementLocated(
             By.css("a[data-menu-xmlid='mate_sign.menu_mate_sign_organization']")),
-            10000
+            config.timeout || 10000
         );
 
         // Click nút organization
@@ -26,14 +26,14 @@ module.exports = async function addOrganization(driver, organization) {
         // Tìm nút new organization
         let buttonNew = await driver.wait(until.elementLocated(
             By.xpath("//div[@class='o_cp_buttons']//button[text()=' New ']")),
-            10000
+            config.timeout || 10000
         );
 
         // Click nút new
         await buttonNew.click();
 
         // Chờ đến khi load trang xong
-        await driver.wait(until.titleIs('Xmate Econtract - New'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - New'), config.timeout || 10000);
 
         // Tìm phần tử input tên tổ chức
         let inputElement = await driver.findElement(By.css("input[id='name']"));
@@ -48,7 +48,7 @@ module.exports = async function addOrganization(driver, organization) {
         await saveButton.click();
 
 
-        await driver.wait(until.titleIs('Xmate Econtract - ' + organization.name), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - ' + organization.name), config.timeout || 10000);
 
         for (const contact of organization.contact) {
             await addContact(driver, contact, organization.name);

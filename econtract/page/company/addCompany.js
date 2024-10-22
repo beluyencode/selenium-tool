@@ -16,26 +16,26 @@ module.exports = async function addCompany(driver) {
         // Tìm button Companies
         let companiesButton = await driver.wait(until.elementLocated(
             By.xpath("//a[text()='Companies']")),
-            10000
+            config.timeout || 10000
         );
 
         // Click vào button Companies
         await companiesButton.click();
 
         // Chờ đến khi load trang xong
-        await driver.wait(until.titleIs('Xmate Econtract - Companies'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - Companies'), config.timeout || 10000);
 
         // Tìm button Create
         let buttonElement = await driver.wait(until.elementLocated(
             By.xpath("//div[@class='o_cp_buttons']//button[text()=' New ']")),
-            10000
+            config.timeout || 10000
         );
 
         // Click vào button Create
         await buttonElement.click();
 
         // Chờ đến khi load trang xong
-        await driver.wait(until.titleIs('Xmate Econtract - New'), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - New'), config.timeout || 10000);
 
         // Tìm phần tử input có placeholder là 'e.g. My Company'
         let inputElement = await driver.findElement(By.css("input[placeholder='e.g. My Company']"));
@@ -50,7 +50,7 @@ module.exports = async function addCompany(driver) {
         await saveButton.click();
 
 
-        await driver.wait(until.titleIs('Xmate Econtract - ' + config.econtract.company.name), 10000);
+        await driver.wait(until.titleIs('Xmate Econtract - ' + config.econtract.company.name), config.timeout || 10000);
 
         await logger.stop();
     } finally {

@@ -12,7 +12,7 @@ module.exports = async function addCompany(driver) {
         // Tìm button change company
         let companiesButton = await driver.wait(until.elementLocated(
             By.css("div.o_switch_company_menu")),
-            10000
+            config.timeout || 10000
         );
 
         // Click vào button change company
@@ -21,7 +21,7 @@ module.exports = async function addCompany(driver) {
         // Tìm button chọn company
         let chooseCompaniesButton = await driver.wait(until.elementLocated(
             By.css(`div[aria-label='Switch to ${config.econtract.company.name}']`)),
-            10000
+            config.timeout || 10000
         );
 
         // Click vào button chọn company
@@ -29,7 +29,7 @@ module.exports = async function addCompany(driver) {
 
         await driver.wait(until.elementLocated(
             By.xpath(`//div[contains(@class, 'o_switch_company_menu')]//span[text()='${config.econtract.company.name}']`)),
-            10000
+            config.timeout || 10000
         );
 
         await logger.stop();
