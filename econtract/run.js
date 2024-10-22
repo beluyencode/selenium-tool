@@ -1,8 +1,8 @@
 const modules = require('./testCase/testCase');
 const config = require('../helper/config');
 
-module.exports = async function run() {
-    Promise.allSettled(config.testCases.map(testCase => modules[testCase]())).then((results) => {
+module.exports = function run() {
+    return Promise.allSettled(config.testCases.map(testCase => modules[testCase]())).then((results) => {
         results.forEach((result, index) => {
             if (result.status === 'fulfilled') {
                 // Xử lý những promise thành công
