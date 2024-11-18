@@ -18,8 +18,6 @@ module.exports = async function upLoadFile(driver) {
             config.timeout || 10000
         );
 
-
-
         await logger.stop();
     } finally {
 

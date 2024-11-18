@@ -8,10 +8,11 @@ module.exports = async function selectContractType(driver) {
         logger.start();
 
         // Chọn loại hợp đồng
-        let selectContractType = await driver.selectContractType(By.css('#contract-type-input'));
+        let selectContractType = await driver.findElement(By.css('#contract-type-input'));
 
         await logger.stop();
     } finally {
 
     }
 }
+

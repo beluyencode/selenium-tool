@@ -1,16 +1,16 @@
 {
     "econtract": {
-        "url": "http://localhost:8069/",
+        "url": "https://econtract-test.mate.com.vn/",
         "admin": {
-            "email": "admin",
-            "password": "1"
+            "email": "test@mate.com.vn",
+            "password": "test"
         },
         "company": {
-            "name": "MATE JSC 1"
+            "name": "MATE JSC"
         },
         "adminCompany": {
             "name": "Hoàn",
-            "email": "hoanhh1@mate.com.vn",
+            "email": "hoanhh@mate.com.vn",
             "password": "1"
         },
         "listUser": [
@@ -533,7 +533,7 @@
         }
     },
     "testCases": [
-        "initTestData"
+        "createContract"
     ],
     "timeout": 10000,
     "delay": 0
