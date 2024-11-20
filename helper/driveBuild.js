@@ -8,6 +8,6 @@ module.exports = async function driveBuild(callback) {
         console.error(e);
         throw e;
     } finally {
-        await driver.quit();
+        // await driver.quit();
     }   
 }   

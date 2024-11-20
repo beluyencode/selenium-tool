@@ -1,9 +1,9 @@
 {
     "econtract": {
-        "url": "https://econtract-test.mate.com.vn/",
+        "url": "http://localhost:8069/",
         "admin": {
-            "email": "test@mate.com.vn",
-            "password": "test"
+            "email": "admin",
+            "password": "1"
         },
         "company": {
             "name": "MATE JSC"
@@ -518,7 +518,10 @@
             }
         ],
         "files": {
-            "filePDFBlank": "D:/Automation/selenium-tool/assets/files/blank_3_pages.pdf"
+            "filePDFBlank": "E:/Download/441748736_754324943250740_3123529438223529763_n.jpg",
+            "attachments": [
+                "E:/Download/441748736_754324943250740_3123529438223529763_n.jpg"
+            ]
         },
         "plan": {
             "name": "Premium",
@@ -530,11 +533,33 @@
         "addPlan": {
             "name": "Premium",
             "companyName": "MATE JSC"
+        },
+        "create_contract": {
+            "name": "Contract",
+            "description": "Description",
+            "contractType": "HĐ Dịch vụ",
+            "contractNumber": "123",
+            "file": "E:/Download/441748736_754324943250740_3123529438223529763_n.jpg",
+            "attachments": [
+                "E:/Download/441748736_754324943250740_3123529438223529763_n.jpg"
+            ],
+            "organization": {
+                "My Company": {
+                    "Signer": [
+                        "1231",
+                        "1231",
+                        "1231"
+                    ],
+                    "Receives a copy": [
+                        "1231"
+                    ]
+                }
+            }
         }
     },
     "testCases": [
         "createContract"
     ],
     "timeout": 10000,
-    "delay": 0
+    "delay": 500
 }
