@@ -8,11 +8,11 @@ module.exports = async function selectContractType(driver) {
         logger.start();
 
         // Tìm nút tiếp tục
-        let continueButton = await driver.findElement(By.css('#continue_step'));
+        let continueButton = await driver.findElement(By.css('#continue_step > span'));
 
         // Click nút tiếp tục
         await continueButton.click();
-     
+
         await logger.stop();
     } finally {
 

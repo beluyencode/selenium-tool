@@ -46,20 +46,22 @@ module.exports = async function addOrganization(driver, contact, organizationNam
         // Nhap ten email
         await inputEmail.sendKeys(contact.email);
 
-        // Tìm select organization
-        let selectOrganization = await driver.findElement(By.css("input[id='organization_id']"));
+        if (organizationName) {
+            // Tìm select organization
+            let selectOrganization = await driver.findElement(By.css("input[id='organization_id']"));
 
-        // Nhập tên tổ chức
-        await selectOrganization.sendKeys(organizationName);
+            // Nhập tên tổ chức
+            await selectOrganization.sendKeys(organizationName);
 
-        // Tìm item organization
-        let organizationItem = await driver.wait(until.elementLocated(
-            By.xpath(`//div[@name='organization_id']//a[text()='${organizationName}']`)),
-            config.timeout || 10000
-        );
+            // Tìm item organization
+            let organizationItem = await driver.wait(until.elementLocated(
+                By.xpath(`//div[@name='organization_id']//a[text()='${organizationName}']`)),
+                config.timeout || 10000
+            );
 
-        // Click item
-        await organizationItem.click();
+            // Click item
+            await organizationItem.click();
+        }
 
         // Tìm phần tử button với thuộc tính data-tooltip là "Save manually"
         let saveButton = await driver.findElement(By.css("button[data-tooltip='Save manually']"));

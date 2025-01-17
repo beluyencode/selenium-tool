@@ -1,5 +1,5 @@
 const config = require('../../../helper/config');
-const {By, until} = require('selenium-webdriver');
+const { By, until } = require('selenium-webdriver');
 const Logger = require('../../../helper/logger');
 
 module.exports = async function addAdminUser(driver) {
@@ -9,7 +9,7 @@ module.exports = async function addAdminUser(driver) {
 
         // Tìm button settings
         let settings = await driver.findElement(By.xpath("//header//*[@title='More Menu']//span[text()='Settings']"));
-        
+
         // Click vào button settings
         await settings.click();
 
@@ -17,7 +17,7 @@ module.exports = async function addAdminUser(driver) {
         let usersButton = await driver.wait(until.elementLocated(
             By.xpath("//a[text()='Users']")),
             2000
-        ); 
+        );
 
         // Click vào button Users
         await usersButton.click();
@@ -26,11 +26,11 @@ module.exports = async function addAdminUser(driver) {
         await driver.wait(until.titleIs('Xmate Econtract - Users'), config.timeout || 10000);
 
         // Tìm button Create
-        let buttonElement =  await driver.wait(until.elementLocated(
+        let buttonElement = await driver.wait(until.elementLocated(
             By.xpath("//div[@class='o_cp_buttons']//button[text()=' New ']")),
             2000
         );
-       
+
         // Click vào button Create
         await buttonElement.click();
 
@@ -45,7 +45,7 @@ module.exports = async function addAdminUser(driver) {
 
         // Tìm phần tử input có placeholder là 'e.g. email@yourcompany.com'
         let emailInput = await driver.findElement(By.css("input[placeholder='e.g. email@yourcompany.com']"));
-        
+
         // Thực hiện hành động với phần tử tìm thấy, ví dụ như nhập dữ liệu
         await emailInput.sendKeys(config.econtract.adminCompany.email);
 
@@ -66,7 +66,7 @@ module.exports = async function addAdminUser(driver) {
         await actionButton.click();
 
         // Tìm button change password
-        let changePasswordButton =  await driver.wait(until.elementLocated(
+        let changePasswordButton = await driver.wait(until.elementLocated(
             By.xpath("//span[@class='dropdown-item o_menu_item'][text()='Change Password']")),
             config.timeout || 10000
         );
@@ -99,9 +99,9 @@ module.exports = async function addAdminUser(driver) {
         await confirmPasswordButton.click();
 
         await driver.wait(until.stalenessOf(confirmPasswordButton), config.timeout || 10000);
-        
+
         await logger.stop();
     } finally {
-        
+
     }
 }

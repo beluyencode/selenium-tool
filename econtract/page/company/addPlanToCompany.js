@@ -1,5 +1,5 @@
 const config = require('../../../helper/config');
-const {By, until} = require('selenium-webdriver');
+const { By, until } = require('selenium-webdriver');
 const Logger = require('../../../helper/logger');
 
 module.exports = async function addPlanToCompany(driver) {
@@ -9,7 +9,7 @@ module.exports = async function addPlanToCompany(driver) {
 
         // Tìm button settings
         let settings = await driver.findElement(By.xpath("//header//*[@title='More Menu']//span[text()='Settings']"));
-        
+
         // Click vào button settings
         await settings.click();
 
@@ -17,7 +17,7 @@ module.exports = async function addPlanToCompany(driver) {
         let companiesButton = await driver.wait(until.elementLocated(
             By.xpath("//a[text()='Subscription']")),
             config.timeout || 10000
-        ); 
+        );
 
         // Click vào button Companies
         await companiesButton.click();
@@ -26,20 +26,20 @@ module.exports = async function addPlanToCompany(driver) {
         await driver.wait(until.titleIs('Xmate Econtract - Subscription'), config.timeout || 10000);
 
         // Tìm button Create
-        let buttonElement =  await driver.wait(until.elementLocated(
+        let buttonElement = await driver.wait(until.elementLocated(
             By.xpath("//div[@class='o_cp_buttons']//button[text()=' New ']")),
             config.timeout || 10000
         );
-       
+
         // Click vào button Create
         await buttonElement.click();
 
         // Chờ đến khi load trang xong
         await driver.wait(until.titleIs('Xmate Econtract - New'), config.timeout || 10000);
 
-        // get Subscription Name
+        // get Subscription Name 
         let inputElement = await driver.findElement(By.css("input[placeholder='e.g SUB00001']"));
-        
+
         let subscriptionName = await inputElement.getAttribute('value');
 
         // Tìm phần tử input có id là 'start_date'
@@ -86,11 +86,11 @@ module.exports = async function addPlanToCompany(driver) {
         await selectPlan.click();
 
         // Tìm thẻ <a> bên trong phần tử cùng cấp với văn bản 'aaaa'
-        let plan =  await driver.wait(until.elementLocated(
+        let plan = await driver.wait(until.elementLocated(
             By.xpath(`//div[@name='plan_id']//a[text()='${config.econtract.plan.name}']`)),
             config.timeout || 10000
         );
-        
+
         // Click vào thẻ <a> tìm thấy
         await plan.click();
 
@@ -129,6 +129,6 @@ module.exports = async function addPlanToCompany(driver) {
 
         await logger.stop();
     } finally {
-        
+
     }
 }

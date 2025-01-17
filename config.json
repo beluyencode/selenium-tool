@@ -1,526 +1,144 @@
 {
     "econtract": {
-        "url": "http://localhost:8069/",
+        "url": "https://econtract-v2430-test.mate.com.vn/",
         "admin": {
-            "email": "admin",
-            "password": "1"
+            "email": "test@mate.com.vn",
+            "password": "test"
         },
         "company": {
-            "name": "MATE JSC"
+            "name": "Công ty Cổ Phần Công Nghệ MATE"
         },
         "adminCompany": {
-            "name": "Hoàn",
+            "name": "Hà Huy Hoàn",
             "email": "hoanhh@mate.com.vn",
             "password": "1"
         },
         "listUser": [
             {
-                "name": "Rigden",
-                "email": "mrigden0@imgur.com",
+                "name": "Trần Minh Khôi",
+                "email": "minhkhoi.tran@gmail.com",
                 "password": 1
             },
             {
-                "name": "Naldrett",
-                "email": "pnaldrett1@skyrock.com",
+                "name": "Nguyễn Thị Ánh Tuyết",
+                "email": "tuyet.anhnguyen@yahoo.com",
                 "password": 1
             },
             {
-                "name": "Murkus",
-                "email": "fmurkus2@netscape.com",
+                "name": "Lê Quang Hưng",
+                "email": "quanghung.le@outlook.com",
                 "password": 1
             },
             {
-                "name": "Maund",
-                "email": "dmaund3@cornell.edu",
+                "name": "Phạm Hoài Thương",
+                "email": "thuong.pham95@gmail.com",
                 "password": 1
             },
             {
-                "name": "Meyrick",
-                "email": "emeyrick4@chronoengine.com",
+                "name": "Đặng Gia Bảo",
+                "email": "giabao.dang@icloud.com",
                 "password": 1
             },
             {
-                "name": "Karle",
-                "email": "rkarle5@japanpost.jp",
+                "name": "Bùi Hồng Ngọc",
+                "email": "hongngoc.bui1999@gmail.com",
                 "password": 1
             },
             {
-                "name": "Tolcharde",
-                "email": "stolcharde6@thetimes.co.uk",
+                "name": "Hoàng Anh Dũng",
+                "email": "anhdung.hoang@protonmail.com",
                 "password": 1
             },
             {
-                "name": "Benardette",
-                "email": "lbenardette7@ning.com",
+                "name": "Vũ Thị Thu Hà",
+                "email": "thuhavt@gmail.com",
                 "password": 1
             },
             {
-                "name": "Villiers",
-                "email": "cvilliers8@goo.ne.jp",
+                "name": "Mai Đức Lâm",
+                "email": "duclam.mai@zoho.com",
                 "password": 1
             },
             {
-                "name": "Rickell",
-                "email": "lrickell9@about.com",
+                "name": "Trịnh Ngọc Lan",
+                "email": "ngoclan.trinh88@hotmail.com",
                 "password": 1
             }
         ],
         "organizations": [
             {
-                "name": "Babbleblab",
                 "contact": [
                     {
-                        "name": "Feedspan",
-                        "email": "npeniman0@vistaprint.com"
+                        "name": "Trần Thị Kim Chi",
+                        "email": "kimchi.tran@gmail.com"
                     },
                     {
-                        "name": "Zazio",
-                        "email": "jkilty1@samsung.com"
+                        "name": "Đỗ Quang Hưng",
+                        "email": "quanghung.do@yahoo.com"
                     },
                     {
-                        "name": "Lazz",
-                        "email": "mgeorgeson2@timesonline.co.uk"
-                    },
-                    {
-                        "name": "Yadel",
-                        "email": "akrysztofowicz3@webmd.com"
-                    },
-                    {
-                        "name": "Aimbo",
-                        "email": "mgrivori4@sbwire.com"
-                    },
-                    {
-                        "name": "Yata",
-                        "email": "bphelit5@cmu.edu"
-                    },
-                    {
-                        "name": "Mita",
-                        "email": "ldodell6@ucla.edu"
-                    },
-                    {
-                        "name": "Jaxnation",
-                        "email": "clonghorne7@bloomberg.com"
-                    },
-                    {
-                        "name": "Thoughtstorm",
-                        "email": "vsherrock8@omniture.com"
-                    },
-                    {
-                        "name": "Voonix",
-                        "email": "mmicklewicz9@omniture.com"
+                        "name": "Vũ Thanh Hòa",
+                        "email": "thanhhoa.vu@outlook.com"
                     }
                 ]
             },
             {
-                "name": "Ntags",
+                "name": "Công ty TNHH Thương mại và Dịch vụ Anh Huy",
                 "contact": [
                     {
-                        "name": "Feedspan",
-                        "email": "npeniman0@vistaprint.com"
+                        "name": "Nguyễn Văn Hưng",
+                        "email": "hung.nguyen@gmail.com"
                     },
                     {
-                        "name": "Zazio",
-                        "email": "jkilty1@samsung.com"
+                        "name": "Trần Thị Thu Hà",
+                        "email": "thuha.tran@yahoo.com"
                     },
                     {
-                        "name": "Lazz",
-                        "email": "mgeorgeson2@timesonline.co.uk"
-                    },
-                    {
-                        "name": "Yadel",
-                        "email": "akrysztofowicz3@webmd.com"
-                    },
-                    {
-                        "name": "Aimbo",
-                        "email": "mgrivori4@sbwire.com"
-                    },
-                    {
-                        "name": "Yata",
-                        "email": "bphelit5@cmu.edu"
-                    },
-                    {
-                        "name": "Mita",
-                        "email": "ldodell6@ucla.edu"
-                    },
-                    {
-                        "name": "Jaxnation",
-                        "email": "clonghorne7@bloomberg.com"
-                    },
-                    {
-                        "name": "Thoughtstorm",
-                        "email": "vsherrock8@omniture.com"
-                    },
-                    {
-                        "name": "Voonix",
-                        "email": "mmicklewicz9@omniture.com"
+                        "name": "Phạm Minh Tuấn",
+                        "email": "mintuan.pham@outlook.com"
                     }
                 ]
             },
             {
-                "name": "Topicstorm",
+                "name": "Công ty Cổ phần Công nghệ Hồng Phát",
                 "contact": [
                     {
-                        "name": "Ozu",
-                        "email": "smontes0@netlog.com"
+                        "name": "Lê Hoàng Anh",
+                        "email": "hoanganh.le@fpt.vn"
                     },
                     {
-                        "name": "Avavee",
-                        "email": "asandbach1@histats.com"
+                        "name": "Đặng Thị Ngọc Bích",
+                        "email": "ngocbich.dang@viettel.com.vn"
                     },
                     {
-                        "name": "Fivechat",
-                        "email": "dpolini2@cocolog-nifty.com"
-                    },
-                    {
-                        "name": "Dynava",
-                        "email": "pthow3@t.co"
-                    },
-                    {
-                        "name": "Trupe",
-                        "email": "rcamilleri4@noaa.gov"
-                    },
-                    {
-                        "name": "Meezzy",
-                        "email": "fbandt5@ow.ly"
-                    },
-                    {
-                        "name": "Feedfish",
-                        "email": "sbolduc6@etsy.com"
-                    },
-                    {
-                        "name": "Tagtune",
-                        "email": "cmcgibbon7@intel.com"
-                    },
-                    {
-                        "name": "Npath",
-                        "email": "clightwood8@tmall.com"
-                    },
-                    {
-                        "name": "Buzzshare",
-                        "email": "hconboy9@springer.com"
+                        "name": "Niu Quang Huy",
+                        "email": "quanghuy.moi@gmail.com"
                     }
                 ]
             },
             {
-                "name": "Skimia",
+                "name": "Công ty TNHH Đầu tư và Xây dựng Thành Đạt",
                 "contact": [
                     {
-                        "name": "Devify",
-                        "email": "banespie0@reference.com"
+                        "name": "Hoàng Thị Mai Linh",
+                        "email": "mailinh.hoang@vnpt.vn"
                     },
                     {
-                        "name": "Yodel",
-                        "email": "fbooy1@webmd.com"
+                        "name": "Bùi Thanh Tùng",
+                        "email": "thanhtung.bui@zohomail.com"
                     },
                     {
-                        "name": "Flashspan",
-                        "email": "mgoly2@paypal.com"
-                    },
-                    {
-                        "name": "Skyba",
-                        "email": "ntwidale3@desdev.cn"
-                    },
-                    {
-                        "name": "Centizu",
-                        "email": "kszymon4@hostgator.com"
-                    },
-                    {
-                        "name": "Leexo",
-                        "email": "ggrimley5@seattletimes.com"
-                    },
-                    {
-                        "name": "Yotz",
-                        "email": "rwyllcock6@topsy.com"
-                    },
-                    {
-                        "name": "Riffpath",
-                        "email": "ljopp7@nps.gov"
-                    },
-                    {
-                        "name": "Zoonoodle",
-                        "email": "smarin8@amazon.co.jp"
-                    },
-                    {
-                        "name": "Oyoloo",
-                        "email": "gczajka9@ucoz.ru"
-                    }
-                ]
-            },
-            {
-                "name": "Voonyx",
-                "contact": [
-                    {
-                        "name": "Jaxworks",
-                        "email": "gcutcliffe0@utexas.edu"
-                    },
-                    {
-                        "name": "Bluejam",
-                        "email": "ppietersma1@t.co"
-                    },
-                    {
-                        "name": "Meembee",
-                        "email": "jfavela2@mozilla.com"
-                    },
-                    {
-                        "name": "Youfeed",
-                        "email": "mnewberry3@fema.gov"
-                    },
-                    {
-                        "name": "Tavu",
-                        "email": "bmunroe4@wunderground.com"
-                    },
-                    {
-                        "name": "Vidoo",
-                        "email": "blanghor5@smugmug.com"
-                    },
-                    {
-                        "name": "Browsetype",
-                        "email": "lflavelle6@state.tx.us"
-                    },
-                    {
-                        "name": "Devify",
-                        "email": "crossiter7@microsoft.com"
-                    },
-                    {
-                        "name": "Jamia",
-                        "email": "obourdice8@usda.gov"
-                    },
-                    {
-                        "name": "Divanoodle",
-                        "email": "aminty9@mac.com"
-                    }
-                ]
-            },
-            {
-                "name": "Wikizz",
-                "contact": [
-                    {
-                        "name": "Browsedrive",
-                        "email": "rbatcock0@nih.gov"
-                    },
-                    {
-                        "name": "Jetwire",
-                        "email": "abaldin1@mysql.com"
-                    },
-                    {
-                        "name": "Gabcube",
-                        "email": "hblasing2@flickr.com"
-                    },
-                    {
-                        "name": "Gabvine",
-                        "email": "alinfoot3@marriott.com"
-                    },
-                    {
-                        "name": "Zoozzy",
-                        "email": "ahacking4@wunderground.com"
-                    },
-                    {
-                        "name": "Camido",
-                        "email": "mgrinaugh5@alibaba.com"
-                    },
-                    {
-                        "name": "Quamba",
-                        "email": "wbraidman6@adobe.com"
-                    },
-                    {
-                        "name": "Mydeo",
-                        "email": "mjeffcock7@economist.com"
-                    },
-                    {
-                        "name": "Babblestorm",
-                        "email": "bpitchford8@plala.or.jp"
-                    },
-                    {
-                        "name": "Zoombeat",
-                        "email": "apigram9@discovery.com"
-                    }
-                ]
-            },
-            {
-                "name": "Browsedrive",
-                "contact": [
-                    {
-                        "name": "Oyoloo",
-                        "email": "jsealey0@wired.com"
-                    },
-                    {
-                        "name": "Realbuzz",
-                        "email": "istuckes1@hc360.com"
-                    },
-                    {
-                        "name": "Tagchat",
-                        "email": "egorry2@posterous.com"
-                    },
-                    {
-                        "name": "Buzzdog",
-                        "email": "jbatch3@reddit.com"
-                    },
-                    {
-                        "name": "Skilith",
-                        "email": "dlaverenz4@stumbleupon.com"
-                    },
-                    {
-                        "name": "Wikizz",
-                        "email": "ghaug5@github.io"
-                    },
-                    {
-                        "name": "Quire",
-                        "email": "eeasum6@nytimes.com"
-                    },
-                    {
-                        "name": "JumpXS",
-                        "email": "vshildrick7@google.pl"
-                    },
-                    {
-                        "name": "Skibox",
-                        "email": "dtarrant8@wiley.com"
-                    },
-                    {
-                        "name": "Feedfish",
-                        "email": "hplunket9@freewebs.com"
-                    }
-                ]
-            },
-            {
-                "name": "Dablist",
-                "contact": [
-                    {
-                        "name": "Twinte",
-                        "email": "ctappin0@ovh.net"
-                    },
-                    {
-                        "name": "Zoozzy",
-                        "email": "hpleass1@wisc.edu"
-                    },
-                    {
-                        "name": "Avamba",
-                        "email": "cdowning2@biblegateway.com"
-                    },
-                    {
-                        "name": "Oozz",
-                        "email": "itschierse3@cdbaby.com"
-                    },
-                    {
-                        "name": "Buzzbean",
-                        "email": "crosewarne4@jigsy.com"
-                    },
-                    {
-                        "name": "Quimm",
-                        "email": "tblaxall5@blogger.com"
-                    },
-                    {
-                        "name": "Twimbo",
-                        "email": "htombleson6@php.net"
-                    },
-                    {
-                        "name": "Jazzy",
-                        "email": "jatheis7@businesswire.com"
-                    },
-                    {
-                        "name": "Tagopia",
-                        "email": "edaily8@aol.com"
-                    },
-                    {
-                        "name": "Yozio",
-                        "email": "bpoor9@godaddy.com"
-                    }
-                ]
-            },
-            {
-                "name": "Vinder",
-                "contact": [
-                    {
-                        "name": "Quimba",
-                        "email": "doager0@marketwatch.com"
-                    },
-                    {
-                        "name": "Meezzy",
-                        "email": "bfrere1@slideshare.net"
-                    },
-                    {
-                        "name": "Shuffledrive",
-                        "email": "amaclucais2@taobao.com"
-                    },
-                    {
-                        "name": "Twitterlist",
-                        "email": "kgeorgeou3@sun.com"
-                    },
-                    {
-                        "name": "Twitterbeat",
-                        "email": "tmarchant4@pbs.org"
-                    },
-                    {
-                        "name": "Kamba",
-                        "email": "rpalister5@usa.gov"
-                    },
-                    {
-                        "name": "Centimia",
-                        "email": "hbeszant6@phoca.cz"
-                    },
-                    {
-                        "name": "Skidoo",
-                        "email": "lloadsman7@furl.net"
-                    },
-                    {
-                        "name": "Mybuzz",
-                        "email": "bpratte8@guardian.co.uk"
-                    },
-                    {
-                        "name": "Zoomcast",
-                        "email": "vburress9@cargocollective.com"
-                    }
-                ]
-            },
-            {
-                "name": "Rhycero",
-                "contact": [
-                    {
-                        "name": "Jabbercube",
-                        "email": "bfawdery0@aol.com"
-                    },
-                    {
-                        "name": "Babblestorm",
-                        "email": "vlaterza1@smh.com.au"
-                    },
-                    {
-                        "name": "Jaxbean",
-                        "email": "hwalter2@tripadvisor.com"
-                    },
-                    {
-                        "name": "Cogidoo",
-                        "email": "bledekker3@foxnews.com"
-                    },
-                    {
-                        "name": "Mydeo",
-                        "email": "dlawland4@miibeian.gov.cn"
-                    },
-                    {
-                        "name": "Twinte",
-                        "email": "mhavoc5@timesonline.co.uk"
-                    },
-                    {
-                        "name": "Jabberbean",
-                        "email": "tcrawley6@bizjournals.com"
-                    },
-                    {
-                        "name": "Zoonoodle",
-                        "email": "vantal7@netscape.com"
-                    },
-                    {
-                        "name": "Linktype",
-                        "email": "swooderson8@cargocollective.com"
-                    },
-                    {
-                        "name": "Dablist",
-                        "email": "rmably9@slideshare.net"
+                        "name": "Phan Hải Yến",
+                        "email": "haiyen.phan@techcombank.com.vn"
                     }
                 ]
             }
         ],
         "files": {
-            "filePDFBlank": "E:/Download/441748736_754324943250740_3123529438223529763_n.jpg",
+            "filePDFBlank": "C:/Users/Administrator/Downloads/blank_3_pages.pdf",
+            "fileDocxDocumaker": "C:/Users/Administrator/Downloads/file_docx_documaker.docx",
             "attachments": [
-                "E:/Download/441748736_754324943250740_3123529438223529763_n.jpg"
+                "C:/Users/Administrator/Downloads/blank_3_pages.pdf"
             ]
         },
         "plan": {
@@ -537,29 +155,24 @@
         "create_contract": {
             "name": "Contract",
             "description": "Description",
-            "contractType": "HĐ Dịch vụ",
+            "contractType": "Service Contract",
             "contractNumber": "123",
-            "file": "E:/Download/441748736_754324943250740_3123529438223529763_n.jpg",
+            "file": "C:/Users/Administrator/Downloads/blank_3_pages.pdf",
             "attachments": [
-                "E:/Download/441748736_754324943250740_3123529438223529763_n.jpg"
+                "C:/Users/Administrator/Downloads/blank_3_pages.pdf"
             ],
             "organization": {
                 "My Company": {
                     "Signer": [
-                        "1231",
-                        "1231",
-                        "1231"
-                    ],
-                    "Receives a copy": [
-                        "1231"
+                        "Hà Huy Hoàn"
                     ]
                 }
             }
         }
     },
     "testCases": [
-        "createContract"
+        "initAllTestDataFlow"
     ],
-    "timeout": 10000,
-    "delay": 500
+    "timeout": 50000,
+    "delay": 10000
 }
