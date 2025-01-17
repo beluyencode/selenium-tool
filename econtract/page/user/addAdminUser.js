@@ -15,7 +15,7 @@ module.exports = async function addAdminUser(driver) {
 
         // Tìm button Users
         let usersButton = await driver.wait(until.elementLocated(
-            By.xpath("//a[text()='Users']")),
+            By.xpath("//a[contains(@class, 'o_dropdown_menu_group_entry') and text()='Users']")),
             2000
         );
 
